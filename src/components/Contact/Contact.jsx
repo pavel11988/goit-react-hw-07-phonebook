@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDeleteContactMutation } from '../../redux/contactsSlice';
+import Delete from 'components/DeleteIcon/DeleteIcon';
 //components-styled
 import {
   ContactContainer,
@@ -23,7 +24,8 @@ export const Contact = ({ id, name, tel }) => {
         onClick={() => deleteContact(id)}
         disabled={deliting}
       >
-        {deliting ? 'Deliting' : 'Delete'}
+        {/* {deliting ? 'Deliting' : 'Delete'} */}
+        <Delete />
       </Button>
     </ContactContainer>
   );

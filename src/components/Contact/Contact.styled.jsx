@@ -44,4 +44,15 @@ export const Button = styled.button`
     -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
   }
+
+  &:disabled {
+    animation: spin 2s linear infinite;
+    background-color: rgb(59, 0, 0);
+    border: 2.5px dashed #ca0b00;
+  }
+  @keyframes spin {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
 `;
